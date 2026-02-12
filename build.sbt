@@ -1,10 +1,13 @@
-name := "echotest-scala"
+name := "topwords-scala"
 
-version := "0.4"
+version := "0.1"
+
+scalaVersion := "3.3.3" // Or your specific Scala 3 version
 
 libraryDependencies ++= Seq(
   "com.lihaoyi"       %% "mainargs"        % "0.7.8",
-  "com.github.sbt.junit" % "jupiter-interface" % "0.17.0" % Test, // required only for plain JUnit testing
+  "ch.qos.logback"     % "logback-classic" % "1.5.6",
+  "com.typesafe.scala-logging" %% "scala-logging" % "3.9.5",
   "org.scalatest"     %% "scalatest"       % "3.2.19"   % Test,
   "org.scalacheck"    %% "scalacheck"      % "1.19.0"   % Test,
   "org.scalatestplus" %% "scalacheck-1-18" % "3.2.19.0" % Test
